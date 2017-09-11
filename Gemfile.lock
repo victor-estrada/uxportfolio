@@ -60,6 +60,9 @@ GEM
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     i18n (0.8.6)
+    inline_svg (1.2.3)
+      activesupport (>= 3.0)
+      nokogiri (>= 1.6)
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
@@ -162,6 +165,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap (~> 4.0.0.beta)
   coffee-rails (~> 4.2)
+  inline_svg
   jbuilder (~> 2.5)
   jquery-rails
   pg
