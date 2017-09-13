@@ -4,6 +4,12 @@
 $font-family-sans-serif: 'Hind Vadodara', sans-serif;
 $headings-font-family: 'Alegreya', serif;
 
+$body-bg: #f9f9f9;
+
 
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import 'bootstrap';
+
+.bg-dark {
+    background-color: #1a1a1a !important;
+}

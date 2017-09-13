@@ -2,18 +2,99 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#home-banner {
+#home-header {
+  background-color: #1a1a1a;
+  height: 500px;
 
-  #home-banner-name {
-    font-family: 'Alegreya', serif;
-    font-size: 100px;
-    font-weight: 900;
+  #home-banner {
+
+    #home-banner-name {
+      margin-top: 49px;
+      font-family: Alegreya-Black;
+      font-size: 132px;
+      font-weight: 900;
+      line-height: 98px;
+      color: #F9F9F9;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+      text-align: center;
+    }
+
+    #home-banner-title {
+      margin-top: 99px;
+      font-family: Alegreya-Black;
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 43px;
+      color: #F9F9F9;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+
+    }
   }
 
-  #home-banner-title {
-    font-family: 'Alegreya', serif;
-    font-size: 72px;
-    font-weight: 900;
+  .circle-sun {
+    position: absolute;
+    left: 35%;
+    top: 52px;
+  }
+
+  .ground {
+    position: absolute;
+    left: 0px;
+    top: 509px;
+  }
+
+  .pyramid-one {
+    position: absolute;
+    left: 0%;
+    top: 369px;
+  }
+
+  .pyramid-two {
+    position: absolute;
+    left: 1%;
+    top: 421px;
+  }
+
+  .dome {
+    position: absolute;
+    left: 13%;
+    top: 438px;
+  }
+
+  .pyramid-three {
+    position: absolute;
+    left: 24%;
+    top: 420px;
+  }
+
+  .pyramid-four {
+    position: absolute;
+    left: 38%;
+    top: 456px;
+  }
+
+  .pyramid-five {
+    position: absolute;
+    left: 48%;
+    top: 434px;
+  }
+
+  .pyramid-six {
+    position: absolute;
+    left: 67%;
+    top: 398px;
+  }
+
+  .pyramid-seven {
+    position: absolute;
+    left: 77%;
+    top: 338px;
+  }
+
+  .pyramid-eight {
+    position: absolute;
+    left: 86%;
+    top: 398px;
   }
 
 }
