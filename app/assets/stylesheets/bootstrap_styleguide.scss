@@ -1,15 +1,82 @@
-@import url('https://fonts.googleapis.com/css?family=Alegreya:900');
+@import url('https://fonts.googleapis.com/css?family=Alegreya:400,900:');
 @import url('https://fonts.googleapis.com/css?family=Hind+Vadodara');
 
 $font-family-sans-serif: 'Hind Vadodara', sans-serif;
 $headings-font-family: 'Alegreya', serif;
-
+$navbar-dark-color: #f9f9f9;
 $body-bg: #f9f9f9;
 
 
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import 'bootstrap';
 
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
 .bg-dark {
-    background-color: #1a1a1a !important;
+  background-color: #1a1a1a !important;
+}
+
+.nav-link {
+  /* About: */
+  font-size: 18px;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+  .nav-item {
+    padding-right: 1em;
+  }
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+  .nav-item {
+    padding-right: 2em;
+  }
+
+  .nav-link {
+    /* About: */
+    font-size: 18px;
+  }
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+
+}
+
+// Extra-Extra large devices (large desktops, 1600px and up)
+@media (min-width: 1600px) {
+
+  .nav-item {
+    padding-right: 3.5em;
+  }
+
+}
+
+// Extra-Extra large devices (large desktops, 1900px and up)
+@media (min-width: 1900px) {
+
+  .nav-item {
+    padding-right: 5em;
+  }
+
+  ul.ml-auto {
+    margin-right: 10%;
+  }
+
 }

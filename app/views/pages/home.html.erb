@@ -1,27 +1,58 @@
 <div class="container-fluid" id="home-header">
-<div><%= inline_svg "circle_sun.svg", class: 'circle-sun' %></div>
-<div><%= inline_svg "dome.svg", class: 'dome' %></div>
-<div><%= inline_svg "ground.svg", class: 'ground' %></div>
-<div><%= inline_svg "pyramid_1.svg", class: 'pyramid-one' %></div>
-<div><%= inline_svg "pyramid_2.svg", class: 'pyramid-two' %></div>
-<div><%= inline_svg "pyramid_4.svg", class: 'pyramid-four' %></div>
-<div><%= inline_svg "pyramid_2.svg", class: 'pyramid-three' %></div>
-<div><%= inline_svg "pyramid_6.svg", class: 'pyramid-six' %></div>
-<div><%= inline_svg "pyramid_5.svg", class: 'pyramid-five' %></div>
-<div><%= inline_svg "pyramid_8.svg", class: 'pyramid-eight' %></div>
-<div><%= inline_svg "pyramid_7.svg", class: 'pyramid-seven' %></div>
+  <span id="small-home-header">
+    <%= inline_svg "circle_sun.svg", class: 'circle-sun' %>
+    <%= inline_svg "xs-dome.svg", class: 'xs-dome' %>
+  </span>
 
-
-
+  <span id="large-home-header">
+    <%= inline_svg "circle_sun.svg", class: 'circle-sun' %>
+    <%= inline_svg "dome.svg", class: 'dome' %>
+  </span>
 
   <div id="home-banner">
     <div class="row">
-      <div class="col-md-6">
-        <div id="home-banner-name" class="text-center">Victor Estrada</div>
+      <div class="col-xs-12 col-md-6">
+        <div id="home-banner-name" class="text-center">Victor<br>Estrada</div>
       </div>
       <div class="col-md-6">
         <div id="home-banner-title">UX Designer<br>& Researcher</div>
       </div>
     </div>
   </div>
+</div>
+
+  <div class="container-fluid pyramid-layout">
+
+    <!-- Small Pyramids -->
+    <%= inline_svg "xs_pyramid_1.svg", class: 'xs-pyramid-one pyramid-xs-hide' %>
+    <%= inline_svg "xs_pyramid_2.svg", class: 'xs-pyramid-two pyramid-xs-hide' %>
+
+    <%= inline_svg "xs_pyramid_4.svg", class: 'xs-pyramid-four pyramid-xs-hide' %>
+    <%= inline_svg "xs_pyramid_3.svg", class: 'xs-pyramid-three pyramid-xs-hide' %>
+
+    <%= inline_svg "xs_pyramid_5.svg", class: 'xs-pyramid-five pyramid-xs-hide' %>
+    <%= inline_svg "xs_pyramid_6.svg", class: 'xs-pyramid-six pyramid-xs-hide' %>
+
+    <!-- Large Pyramids -->
+    <%= inline_svg "pyramid_1.svg", class: 'pyramid-one pyramid-lg-hide' %>
+    <%= inline_svg "pyramid_2.svg", class: 'pyramid-two pyramid-lg-hide' %>
+
+    <%= inline_svg "pyramid_2.svg", class: 'pyramid-wide-one pyramid-wide-hide' %>
+    <%= inline_svg "pyramid_7.svg", class: 'pyramid-wide-three pyramid-wide-hide' %>
+
+    <%= inline_svg "pyramid_4.svg", class: 'pyramid-four pyramid-lg-hide' %>
+
+    <%= inline_svg "pyramid_6.svg", class: 'pyramid-wide-two pyramid-wide-hide' %>
+
+    <%= inline_svg "pyramid_2.svg", class: 'pyramid-three pyramid-lg-hide' %>
+
+    <%= inline_svg "pyramid_7.svg", class: 'pyramid-seven pyramid-lg-hide' %>
+    <%= inline_svg "pyramid_6.svg", class: 'pyramid-six pyramid-lg-hide' %>
+    <%= inline_svg "pyramid_5.svg", class: 'pyramid-five pyramid-lg-hide' %>
+
+    <%= inline_svg "pyramid_5.svg", class: 'pyramid-wide-four pyramid-wide-hide' %>
+
+
+    <%= inline_svg "pyramid_8.svg", class: 'pyramid-eight pyramid-lg-hide' %>
+
 </div>

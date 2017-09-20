@@ -2,99 +2,686 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
 #home-header {
   background-color: #1a1a1a;
-  height: 500px;
+  height: 330px;
+}
 
-  #home-banner {
+#small-home-header {
+  display: block;
+}
 
-    #home-banner-name {
-      margin-top: 49px;
-      font-family: Alegreya-Black;
-      font-size: 132px;
-      font-weight: 900;
-      line-height: 98px;
-      color: #F9F9F9;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.50);
-      text-align: center;
-    }
+#home-banner-name {
+  margin-top: 10px;
+  font-family: Alegreya-Black;
+  font-size: 86px;
+  font-weight: 900;
+  line-height: 62px;
+  color: #F9F9F9;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+}
 
-    #home-banner-title {
-      margin-top: 99px;
-      font-family: Alegreya-Black;
-      font-size: 64px;
-      font-weight: 900;
-      line-height: 43px;
-      color: #F9F9F9;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+#home-banner-title {
+  margin-top: 20px;
+  text-align: center;
+  font-family: Alegreya-Black;
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 28px;
+  color: #F9F9F9;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+}
 
-    }
+.circle-sun {
+  position: absolute;
+  width: 214px;
+  height: 214px;
+  left: calc(50% - 107px);
+  top: 61px;
+  -webkit-animation: sunFade 8s; /* Safari 4.0 - 8.0 */
+  animation: sunFade 8s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes sunFade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes sunFade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+// Hide larger pyramids
+.pyramid-lg-hide {
+  visibility: hidden;
+}
+
+.pyramid-wide-hide {
+  visibility: collapse;
+}
+
+.pyramid-layout {
+  background-color: #34495E;
+  height: 30px;
+}
+
+
+
+.xs-dome {
+  position: absolute;
+  left: 13%;
+  top: 325px;
+  -webkit-animation: domeFade 8s; /* Safari 4.0 - 8.0 */
+  animation: domeFade 8s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes domeFade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes domeFade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+#small-pyramids {
+  display: block;
+  background-color: #34495E;
+  height: 30px;
+}
+
+#large-home-header {
+  display: none;
+}
+
+
+
+.xs-pyramid-one {
+  position: absolute;
+  left: -2%;
+  top: 338px;
+  -webkit-animation: xsPyramidSlideOne 1.5s; /* Safari 4.0 - 8.0 */
+  animation: xsPyramidSlideOne 1.5s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes xsPyramidSlideOne {
+  from {left: -500px;}
+  to {left: -2%;}
+}
+
+/* Standard syntax */
+@keyframes xsPyramidSlideOne {
+  from {left: -500px;}
+  to {left: -2%;}
+}
+
+.xs-pyramid-two {
+  position: absolute;
+  left: 28%;
+  top: 345px;
+  -webkit-animation: xsPyramidSlideTwo 1.5s; /* Safari 4.0 - 8.0 */
+  animation: xsPyramidSlideTwo 1.5s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes xsPyramidSlideTwo {
+  from {left: -500px;}
+  to {left: 28%;}
+}
+
+/* Standard syntax */
+@keyframes xsPyramidSlideTwo {
+  from {left: -500px;}
+  to {left: 28%;}
+}
+
+.xs-pyramid-three {
+  position: absolute;
+  left: 40%;
+  top: 365px;
+  -webkit-animation: xsPyramidSlideThree 2s; /* Safari 4.0 - 8.0 */
+  animation: xsPyramidSlideThree 2s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes xsPyramidSlideThree {
+  from {left: -500px;}
+  to {left: 40%;}
+}
+
+/* Standard syntax */
+@keyframes xsPyramidSlideThree {
+  from {left: -500px;}
+  to {left: 40%;}
+}
+
+.xs-pyramid-four {
+  position: absolute;
+  right: 29%;
+  top: 335px;
+  -webkit-animation: xsPyramidSlideFour 2s; /* Safari 4.0 - 8.0 */
+  animation: xsPyramidSlideFour 2s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes xsPyramidSlideFour {
+  from {right: -1000px;}
+  to {right: 29%;}
+}
+
+/* Standard syntax */
+@keyframes xsPyramidSlideFour {
+  from {right: -1000px;}
+  to {right: 29%;}
+}
+
+.xs-pyramid-five {
+  position: absolute;
+  right: 12%;
+  top: 340px;
+  -webkit-animation: xsPyramidSlideFive 1.5s; /* Safari 4.0 - 8.0 */
+  animation: xsPyramidSlideFive 1.5s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes xsPyramidSlideFive {
+  from {right: -1000px;}
+  to {right: 12%;}
+}
+
+/* Standard syntax */
+@keyframes xsPyramidSlideFive {
+  from {right: -1000px;}
+  to {right: 12%;}
+}
+
+.xs-pyramid-six {
+  position: absolute;
+  right: 0;
+  top: 310px;
+  -webkit-animation: xsPyramidSlideSix 1.5s; /* Safari 4.0 - 8.0 */
+  animation: xsPyramidSlideSix 1.5s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes xsPyramidSlideSix {
+  from {right: -1000px;}
+  to {right: 0;}
+}
+
+/* Standard syntax */
+@keyframes xsPyramidSlideSix {
+  from {right: -1000px;}
+  to {right: 0;}
+}
+
+
+
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  #home-header {
+    height: 450px;
+  }
+
+  #home-banner-name {
+    margin-top: 25px;
+    font-size: 82px;
+    line-height: 68px;
+  }
+
+  #home-banner-title {
+    text-align: center;
+    margin-top: 65px;
+    font-size: 48px;
+    line-height: 43px;
   }
 
   .circle-sun {
     position: absolute;
-    left: 35%;
+    width: 340px;
+    height: 340px;
+    left: calc(50% - 170px);
     top: 52px;
+    -webkit-animation: sunFade 8s; /* Safari 4.0 - 8.0 */
+    animation: sunFade 8s;
   }
 
-  .ground {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+  #home-banner-name {
+    font-size: 99px;
+    line-height: 78px;
+  }
+
+  #home-banner-title {
+    text-align: center;
+    font-size: 48px;
+    line-height: 38px;
+  }
+
+  .pyramid-lg-hide {
+    visibility: visible;
+  }
+
+  .pyramid-layout {
+    background-color: #34495E;
+    height: 50px;
+  }
+
+  #small-home-header {
+    display: none;
+  }
+
+  #large-home-header {
+    display: block;
+  }
+
+  .circle-sun {
     position: absolute;
-    left: 0px;
-    top: 509px;
+    width: 265px;
+    height: 265px;
+    left: 35%;
+    top: 52px;
+    -webkit-animation: sunFade 8s; /* Safari 4.0 - 8.0 */
+    animation: sunFade 8s;
   }
 
   .pyramid-one {
     position: absolute;
-    left: 0%;
-    top: 369px;
+    left: -2%;
+    top: 359px;
+    -webkit-animation: pyramidSlideOne 1s; /* Safari 4.0 - 8.0 */
+    animation: pyramidSlideOne 1s;
+  }
+
+    /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes pyramidSlideOne {
+    from {left: -500px;}
+    to {left: -2%;}
+  }
+
+  /* Standard syntax */
+  @keyframes pyramidSlideOne {
+    from {left: -500px;}
+    to {left: -2%;}
   }
 
   .pyramid-two {
     position: absolute;
     left: 1%;
     top: 421px;
+    -webkit-animation: pyramidSlideTwo 1.5s; /* Safari 4.0 - 8.0 */
+    animation: pyramidSlideTwo 1.5s;
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes pyramidSlideTwo {
+    from {left: -500px;}
+    to {left: 1%;}
+  }
+
+  /* Standard syntax */
+  @keyframes pyramidSlideTwo {
+    from {left: -500px;}
+    to {left: 1%;}
   }
 
   .dome {
     position: absolute;
     left: 13%;
     top: 438px;
+    -webkit-animation: domeFade 8s; /* Safari 4.0 - 8.0 */
+    animation: domeFade 8s;
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes domeFade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  /* Standard syntax */
+  @keyframes domeFade {
+    from {opacity: 0;}
+    to {opacity: 1;}
   }
 
   .pyramid-three {
     position: absolute;
     left: 24%;
     top: 420px;
+    -webkit-animation: pyramidSlideThree 2s; /* Safari 4.0 - 8.0 */
+    animation: pyramidSlideThree 2s;
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes pyramidSlideThree {
+    from {left: -500px;}
+    to {left: 24%;}
+  }
+
+  /* Standard syntax */
+  @keyframes pyramidSlideThree {
+  from {left: -500px;}
+  to {left: 24%;}
   }
 
   .pyramid-four {
     position: absolute;
     left: 38%;
     top: 456px;
+    -webkit-animation: pyramidSlideFour 2s; /* Safari 4.0 - 8.0 */
+    animation: pyramidSlideFour 2s;
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes pyramidSlideFour {
+    from {left: -500px;}
+    to {left: 38%;}
+  }
+
+  /* Standard syntax */
+  @keyframes pyramidSlideFour {
+  from {left: -500px;}
+  to {left: 38%;}
   }
 
   .pyramid-five {
     position: absolute;
     left: 48%;
     top: 434px;
+    -webkit-animation: pyramidSlideFive 2s; /* Safari 4.0 - 8.0 */
+    animation: pyramidSlideFive 2s;
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes pyramidSlideFive {
+    from {left: 1700px;}
+    to {left: 48%;}
+  }
+
+  /* Standard syntax */
+  @keyframes pyramidSlideFive {
+  from {left: 1700px;}
+  to {left: 48%;}
   }
 
   .pyramid-six {
     position: absolute;
     left: 67%;
-    top: 398px;
+    top: 402px;
+    -webkit-animation: pyramidSlideSix 1.5s; /* Safari 4.0 - 8.0 */
+    animation: pyramidSlideSix 1.5s;
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes pyramidSlideSix {
+    from {left: 1700px;}
+    to {left: 67%;}
+  }
+
+  /* Standard syntax */
+  @keyframes pyramidSlideSix {
+  from {left: 1700px;}
+  to {left: 67%;}
   }
 
   .pyramid-seven {
     position: absolute;
-    left: 77%;
+    left: 73%;
     top: 338px;
+    -webkit-animation: pyramidSlideSevenMd 1s; /* Safari 4.0 - 8.0 */
+    animation: pyramidSlideSevenMd 1s;
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes pyramidSlideSevenMd {
+    from {left: 1700px;}
+    to {left: 73%;}
+  }
+
+  /* Standard syntax */
+  @keyframes pyramidSlideSevenMd {
+  from {left: 1700px;}
+  to {left: 73%;}
   }
 
   .pyramid-eight {
     position: absolute;
-    left: 86%;
-    top: 398px;
+    right: 0%;
+    top: 410px;
+    -webkit-animation: pyramidSlideEight 1.5s; /* Safari 4.0 - 8.0 */
+    animation: pyramidSlideEight 1.5s;
   }
 
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes pyramidSlideEight {
+    from {right: -500px;}
+    to {right: 0%;}
+  }
+
+  /* Standard syntax */
+  @keyframes pyramidSlideEight {
+  from {right: -500px;}
+  to {right: 0%;}
+  }
+
+  // Hide larger pyramids
+  .pyramid-xs-hide {
+    visibility: hidden;
+  }
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+  #home-banner-name {
+    margin-top: 49px;
+    font-size: 132px;
+    font-weight: 900;
+    line-height: 98px;
+  }
+
+  #home-banner-title {
+    text-align: left;
+    margin-top: 99px;
+    font-family: Alegreya-Black;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 43px;
+  }
+
+  .circle-sun {
+    position: absolute;
+    left: 35%;
+    top: 52px;
+    -webkit-animation: sunFade 8s; /* Safari 4.0 - 8.0 */
+    animation: sunFade 8s;
+  }
+
+  .pyramid-lg-hide {
+    visibility: visible;
+  }
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+
+    #home-banner-name {
+      font-size: 99px;
+      line-height: 78px;
+    }
+
+    #home-banner-title {
+      text-align: center;
+      font-size: 48px;
+      line-height: 38px;
+    }
+
+    #large-home-header {
+      display: block;
+    }
+
+    .circle-sun {
+      position: absolute;
+      width: 265px;
+      height: 265px;
+      left: 35%;
+      top: 52px;
+      -webkit-animation: sunFade 8s; /* Safari 4.0 - 8.0 */
+      animation: sunFade 8s;
+    }
+
+
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+
+    #home-banner-name {
+      margin-top: 49px;
+      font-size: 132px;
+      font-weight: 900;
+      line-height: 98px;
+    }
+
+    #home-banner-title {
+      text-align: left;
+      margin-top: 99px;
+      font-family: Alegreya-Black;
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 43px;
+    }
+
+    .circle-sun {
+      position: absolute;
+      left: 35%;
+      top: 52px;
+      -webkit-animation: sunFade 8s; /* Safari 4.0 - 8.0 */
+      animation: sunFade 8s;
+    }
+
+}
+
+// Extra-Extra large devices (large desktops, 1600px and up)
+@media (min-width: 1600px) {
+
+  #home-banner-name {
+  }
+
+  .pyramid-wide-hide {
+    visibility: visible;
+  }
+
+  .pyramid-wide-one {
+    position: absolute;
+    left: 5%;
+    top: 421px;
+    -webkit-animation: pyramidSlideWideOne 1.5s; /* Safari 4.0 - 8.0 */
+    animation: pyramidSlideWideOne 1.5s;
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes pyramidSlideWideOne {
+    from {left: -500px;}
+    to {left: 5%;}
+  }
+
+  /* Standard syntax */
+  @keyframes pyramidSlideWideOne {
+    from {left: -500px;}
+    to {left: 5%;}
+  }
+
+  .pyramid-wide-two {
+    position: absolute;
+    left: 30%;
+    top: 421px;
+    -webkit-animation: pyramidSlideWideTwo 1.5s; /* Safari 4.0 - 8.0 */
+    animation: pyramidSlideWideTwo 1.5s;
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes pyramidSlideWideTwo {
+    from {left: -500px;}
+    to {left: 30%;}
+  }
+
+  /* Standard syntax */
+  @keyframes pyramidSlideWideTwo {
+    from {left: -500px;}
+    to {left: 30%;}
+  }
+
+  .pyramid-wide-three {
+    position: absolute;
+    left: 45%;
+    top: 337px;
+    -webkit-animation: pyramidSlideWideThree 1.5s; /* Safari 4.0 - 8.0 */
+    animation: pyramidSlideWideThree 1.5s;
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes pyramidSlideWideThree {
+    from {left: -500px;}
+    to {left: 45%;}
+  }
+
+  /* Standard syntax */
+  @keyframes pyramidSlideWideThree {
+  from {left: -500px;}
+  to {left: 45%;}
+  }
+
+  .pyramid-wide-four {
+    position: absolute;
+    left: 68%;
+    top: 430px;
+    -webkit-animation: pyramidSlideWideFour 2s; /* Safari 4.0 - 8.0 */
+    animation: pyramidSlideWideFour 2s;
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes pyramidSlideWideFour {
+    from {left: 1700px;}
+    to {left: 68%;}
+  }
+
+  /* Standard syntax */
+  @keyframes pyramidSlideWideFour {
+  from {left: 1700px;}
+  to {left: 68%;}
+  }
+
+}
+
+// Extra-Extra large devices (large desktops, 1900px and up)
+@media (min-width: 1900px) {
+  #home-banner-name {
+
+  }
 }
