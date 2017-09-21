@@ -6,7 +6,10 @@
 // No media query since this is the default in Bootstrap
 
 #home-header {
-  background-color: #1a1a1a;
+  background: #CC95C0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   height: 330px;
 }
 
@@ -67,7 +70,9 @@
 }
 
 .pyramid-layout {
-  background-color: #34495E;
+  background: #757F9A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 30px;
 }
 
@@ -75,8 +80,8 @@
 
 .xs-dome {
   position: absolute;
-  left: 13%;
-  top: 325px;
+  left: 10%;
+  top: 330px;
   -webkit-animation: domeFade 8s; /* Safari 4.0 - 8.0 */
   animation: domeFade 8s;
 }
@@ -93,22 +98,14 @@
   to {opacity: 1;}
 }
 
-#small-pyramids {
-  display: block;
-  background-color: #34495E;
-  height: 30px;
-}
-
 #large-home-header {
   display: none;
 }
 
-
-
 .xs-pyramid-one {
   position: absolute;
   left: -2%;
-  top: 338px;
+  top: 333px;
   -webkit-animation: xsPyramidSlideOne 1.5s; /* Safari 4.0 - 8.0 */
   animation: xsPyramidSlideOne 1.5s;
 }
@@ -148,7 +145,7 @@
 .xs-pyramid-three {
   position: absolute;
   left: 40%;
-  top: 365px;
+  top: 360px;
   -webkit-animation: xsPyramidSlideThree 2s; /* Safari 4.0 - 8.0 */
   animation: xsPyramidSlideThree 2s;
 }
@@ -168,7 +165,7 @@
 .xs-pyramid-four {
   position: absolute;
   right: 29%;
-  top: 335px;
+  top: 345px;
   -webkit-animation: xsPyramidSlideFour 2s; /* Safari 4.0 - 8.0 */
   animation: xsPyramidSlideFour 2s;
 }
@@ -405,7 +402,7 @@
   .pyramid-five {
     position: absolute;
     left: 48%;
-    top: 434px;
+    top: 442px;
     -webkit-animation: pyramidSlideFive 2s; /* Safari 4.0 - 8.0 */
     animation: pyramidSlideFive 2s;
   }
@@ -445,7 +442,7 @@
   .pyramid-seven {
     position: absolute;
     left: 73%;
-    top: 338px;
+    top: 342px;
     -webkit-animation: pyramidSlideSevenMd 1s; /* Safari 4.0 - 8.0 */
     animation: pyramidSlideSevenMd 1s;
   }
@@ -465,7 +462,7 @@
   .pyramid-eight {
     position: absolute;
     right: 0%;
-    top: 410px;
+    top: 405px;
     -webkit-animation: pyramidSlideEight 1.5s; /* Safari 4.0 - 8.0 */
     animation: pyramidSlideEight 1.5s;
   }
@@ -620,7 +617,7 @@
   .pyramid-wide-two {
     position: absolute;
     left: 30%;
-    top: 421px;
+    top: 416px;
     -webkit-animation: pyramidSlideWideTwo 1.5s; /* Safari 4.0 - 8.0 */
     animation: pyramidSlideWideTwo 1.5s;
   }
@@ -640,7 +637,7 @@
   .pyramid-wide-three {
     position: absolute;
     left: 45%;
-    top: 337px;
+    top: 342px;
     -webkit-animation: pyramidSlideWideThree 1.5s; /* Safari 4.0 - 8.0 */
     animation: pyramidSlideWideThree 1.5s;
   }
@@ -660,7 +657,7 @@
   .pyramid-wide-four {
     position: absolute;
     left: 68%;
-    top: 430px;
+    top: 445px;
     -webkit-animation: pyramidSlideWideFour 2s; /* Safari 4.0 - 8.0 */
     animation: pyramidSlideWideFour 2s;
   }

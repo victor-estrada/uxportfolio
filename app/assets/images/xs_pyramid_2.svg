@@ -1,22 +1,33 @@
 
-<svg width="68px" height="50px" viewBox="0 0 68 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="66px" height="48px" viewBox="0 0 66 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
     <desc>Created with Sketch.</desc>
     <defs>
-        <filter x="-15.0%" y="-21.4%" width="125.0%" height="138.1%" filterUnits="objectBoundingBox" id="filter-1">
-            <feOffset dx="-2" dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0.101960784   0 0 0 0 0.101960784   0 0 0 0 0.101960784  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+        <filter x="-12.5%" y="-20.2%" width="120.0%" height="131.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="-2" dy="-2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.216202446 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
             <feMerge>
                 <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
                 <feMergeNode in="SourceGraphic"></feMergeNode>
             </feMerge>
         </filter>
+        <linearGradient x1="65.1914705%" y1="7.71926405%" x2="42.0645057%" y2="60.3956477%" id="linearGradient-2">
+            <stop stop-color="#BDC3C7" offset="0%"></stop>
+            <stop stop-color="#838CA5" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="73.6397259%" x2="111.410558%" y2="-44.6915515%" id="linearGradient-3">
+            <stop stop-color="#E0E3E5" offset="0%"></stop>
+            <stop stop-color="#E4CEDF" offset="59.413745%"></stop>
+            <stop stop-color="#D0D8DD" offset="100%"></stop>
+        </linearGradient>
     </defs>
     <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-Copy-4" filter="url(#filter-1)" transform="translate(6.000000, 5.000000)">
-            <polygon id="Triangle-5-Copy-3" fill="#0E1215" points="30 0 30 42 0 42"></polygon>
-            <polygon id="Triangle-5-Copy-2" fill="#2C3E50" points="30 -4.58994957e-15 30 42 60 42"></polygon>
+        <g id="Bootstrap-xs-Copy-2" transform="translate(-89.000000, -344.000000)">
+            <g id="Group-2" filter="url(#filter-1)" transform="translate(94.000000, 349.000000)">
+                <polygon id="Triangle-5-Copy-3" fill="url(#linearGradient-2)" points="30 0 30 42 0 42"></polygon>
+                <polygon id="Triangle-5-Copy-2" fill="url(#linearGradient-3)" points="30 -4.58994957e-15 30 42 60 42"></polygon>
+            </g>
         </g>
     </g>
 </svg>
