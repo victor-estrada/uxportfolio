@@ -1,4 +1,6 @@
-@import url('//fonts.googleapis.com/css?family=Hind+Vadodara');
+@import url(https://fonts.googleapis.com/css?family=Hind+Vadodara);
+@import url(https://fonts.googleapis.com/css?family=Alegreya:400,900);
+
 
 $font-family-sans-serif: 'Hind Vadodara', sans-serif;
 $headings-font-family: 'Alegreya', serif;
@@ -17,7 +19,6 @@ $body-bg: #f9f9f9;
   background: #CC95C0;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 .nav-link {
