@@ -6,10 +6,9 @@
 // No media query since this is the default in Bootstrap
 
 #home-header {
-  background: #CC95C0;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background: #1a2a6c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #333333, #95a5a6, #7f8c8d);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #333333, #95a5a6, #7f8c8d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 330px;
 }
 
@@ -18,32 +17,33 @@
 }
 
 #home-banner-name {
-  margin-top: 10px;
-  font-family: 'Bevan', cursive;
-  font-size: 70px;
-  letter-spacing: -3px;
+  margin-top: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 58px;
+  letter-spacing: 4px;
   line-height: 56px;
-  color: #F9F9F9;
+  color: #ecf0f1;
   text-shadow: 0 2px 4px rgba(0,0,0,0.50);
 }
 
 #home-banner-title {
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: center;
-  font-family: 'Bevan', cursive;
-  letter-spacing: -2px;
-  font-size: 36px;
-  line-height: 28px;
+  font-family: 'Archivo Black', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 24px;
+  line-height: 24px;
   color: #F9F9F9;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.50);
 }
 
 .circle-sun {
   position: absolute;
-  width: 214px;
-  height: 214px;
-  left: calc(50% - 107px);
-  top: 61px;
+  width: 190px;
+  height: 190px;
+  left: calc(50% - 95px);
+  top: 200px;
   -webkit-animation: sunFade 8s; /* Safari 4.0 - 8.0 */
   animation: sunFade 8s;
 }
@@ -70,9 +70,9 @@
 }
 
 .pyramid-layout {
-  background: #757F9A;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #D8D8D8;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #D8D8D8, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #D8D8D8, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 30px;
 }
 

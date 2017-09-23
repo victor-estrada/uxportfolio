@@ -1,13 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Hind+Vadodara);
-@import url(https://fonts.googleapis.com/css?family=Alegreya:400,900);
 @import url(https://fonts.googleapis.com/css?family=Bevan);
+@import url(https://fonts.googleapis.com/css?family=Archivo+Black);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 
 
 
+
+// Bootstrap variables
 $font-family-sans-serif: 'Hind Vadodara', sans-serif;
-$headings-font-family: 'Alegreya', serif;
 $navbar-dark-color: #f9f9f9;
 $body-bg: #f9f9f9;
+
+
+// Custom variables
 
 
 // Custom bootstrap variables must be set or imported *before* bootstrap.
@@ -16,16 +21,21 @@ $body-bg: #f9f9f9;
 
 // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
-
 .bg-dark {
-  background: #CC95C0;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #1a2a6c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #333333, #95a5a6, #7f8c8d);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #333333, #95a5a6, #7f8c8d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+ul.navbar-nav {
+  margin-bottom: 125px;
 }
 
 .nav-link {
   /* About: */
-  font-size: 18px;
+  padding: .75rem;
+  text-align: right;
+  font-size: 24px;
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -33,10 +43,20 @@ $body-bg: #f9f9f9;
 
 
 
+
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+
+  ul.navbar-nav {
+    margin-bottom: 0;
+  }
+
+  .nav-link {
+    /* About: */
+    font-size: 18px;
+  }
 
   .nav-item {
     padding-right: 1em;
