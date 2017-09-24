@@ -9,7 +9,7 @@
   background: #614385;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #516395, #614385);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #516395, #614385); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  height: 512px;
+  height: 452px;
 }
 
 #home-banner-name {
@@ -39,12 +39,12 @@
   width: 190px;
   height: 190px;
   left: calc(50% - 95px);
-  top: 175px;
+  top: 250px;
   -webkit-animation: sunFade 5s; /* Safari 4.0 - 8.0 */
   animation: sunFade 5s;
 }
 
-#home-banner .card {
+#home-projects .card {
   margin-top: 140px;
   background-color: rgba(245, 240, 240, .9);
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
