@@ -6,18 +6,14 @@
 // No media query since this is the default in Bootstrap
 
 #home-header {
-  background: #1a2a6c;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #333333, #95a5a6, #7f8c8d);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #333333, #95a5a6, #7f8c8d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  height: 330px;
-}
-
-#small-home-header {
-  display: block;
+  background: #614385;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #516395, #614385);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #516395, #614385); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 512px;
 }
 
 #home-banner-name {
-  margin-top: 15px;
+  margin-top: 10px;
   font-family: 'Raleway', sans-serif;
   font-size: 58px;
   letter-spacing: 4px;
@@ -27,7 +23,7 @@
 }
 
 #home-banner-title {
-  margin-top: 10px;
+  margin-top: 5px;
   text-align: center;
   font-family: 'Archivo Black', sans-serif;
   text-transform: uppercase;
@@ -43,9 +39,17 @@
   width: 190px;
   height: 190px;
   left: calc(50% - 95px);
-  top: 200px;
-  -webkit-animation: sunFade 8s; /* Safari 4.0 - 8.0 */
-  animation: sunFade 8s;
+  top: 175px;
+  -webkit-animation: sunFade 5s; /* Safari 4.0 - 8.0 */
+  animation: sunFade 5s;
+}
+
+#home-banner .card {
+  margin-top: 140px;
+  background-color: rgba(245, 240, 240, .9);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Safari 4.0 - 8.0 */
@@ -59,171 +63,6 @@
   from {opacity: 0;}
   to {opacity: 1;}
 }
-
-// Hide larger pyramids
-.pyramid-lg-hide {
-  visibility: hidden;
-}
-
-.pyramid-wide-hide {
-  visibility: collapse;
-}
-
-.pyramid-layout {
-  background: #D8D8D8;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #D8D8D8, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #D8D8D8, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  height: 30px;
-}
-
-
-
-.xs-dome {
-  position: absolute;
-  left: 10%;
-  top: 330px;
-  -webkit-animation: domeFade 8s; /* Safari 4.0 - 8.0 */
-  animation: domeFade 8s;
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes domeFade {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-/* Standard syntax */
-@keyframes domeFade {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-#large-home-header {
-  display: none;
-}
-
-.xs-pyramid-one {
-  position: absolute;
-  left: -2%;
-  top: 333px;
-  -webkit-animation: xsPyramidSlideOne 1.5s; /* Safari 4.0 - 8.0 */
-  animation: xsPyramidSlideOne 1.5s;
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes xsPyramidSlideOne {
-  from {left: -500px;}
-  to {left: -2%;}
-}
-
-/* Standard syntax */
-@keyframes xsPyramidSlideOne {
-  from {left: -500px;}
-  to {left: -2%;}
-}
-
-.xs-pyramid-two {
-  position: absolute;
-  left: 28%;
-  top: 345px;
-  -webkit-animation: xsPyramidSlideTwo 1.5s; /* Safari 4.0 - 8.0 */
-  animation: xsPyramidSlideTwo 1.5s;
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes xsPyramidSlideTwo {
-  from {left: -500px;}
-  to {left: 28%;}
-}
-
-/* Standard syntax */
-@keyframes xsPyramidSlideTwo {
-  from {left: -500px;}
-  to {left: 28%;}
-}
-
-.xs-pyramid-three {
-  position: absolute;
-  left: 40%;
-  top: 360px;
-  -webkit-animation: xsPyramidSlideThree 2s; /* Safari 4.0 - 8.0 */
-  animation: xsPyramidSlideThree 2s;
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes xsPyramidSlideThree {
-  from {left: -500px;}
-  to {left: 40%;}
-}
-
-/* Standard syntax */
-@keyframes xsPyramidSlideThree {
-  from {left: -500px;}
-  to {left: 40%;}
-}
-
-.xs-pyramid-four {
-  position: absolute;
-  right: 29%;
-  top: 345px;
-  -webkit-animation: xsPyramidSlideFour 2s; /* Safari 4.0 - 8.0 */
-  animation: xsPyramidSlideFour 2s;
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes xsPyramidSlideFour {
-  from {right: -1000px;}
-  to {right: 29%;}
-}
-
-/* Standard syntax */
-@keyframes xsPyramidSlideFour {
-  from {right: -1000px;}
-  to {right: 29%;}
-}
-
-.xs-pyramid-five {
-  position: absolute;
-  right: 12%;
-  top: 340px;
-  -webkit-animation: xsPyramidSlideFive 1.5s; /* Safari 4.0 - 8.0 */
-  animation: xsPyramidSlideFive 1.5s;
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes xsPyramidSlideFive {
-  from {right: -1000px;}
-  to {right: 12%;}
-}
-
-/* Standard syntax */
-@keyframes xsPyramidSlideFive {
-  from {right: -1000px;}
-  to {right: 12%;}
-}
-
-.xs-pyramid-six {
-  position: absolute;
-  right: 0;
-  top: 310px;
-  -webkit-animation: xsPyramidSlideSix 1.5s; /* Safari 4.0 - 8.0 */
-  animation: xsPyramidSlideSix 1.5s;
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes xsPyramidSlideSix {
-  from {right: -1000px;}
-  to {right: 0;}
-}
-
-/* Standard syntax */
-@keyframes xsPyramidSlideSix {
-  from {right: -1000px;}
-  to {right: 0;}
-}
-
-
-
 
 
 
@@ -299,191 +138,6 @@
     animation: sunFade 8s;
   }
 
-  .pyramid-one {
-    position: absolute;
-    left: -2%;
-    top: 359px;
-    -webkit-animation: pyramidSlideOne 1s; /* Safari 4.0 - 8.0 */
-    animation: pyramidSlideOne 1s;
-  }
-
-    /* Safari 4.0 - 8.0 */
-  @-webkit-keyframes pyramidSlideOne {
-    from {left: -500px;}
-    to {left: -2%;}
-  }
-
-  /* Standard syntax */
-  @keyframes pyramidSlideOne {
-    from {left: -500px;}
-    to {left: -2%;}
-  }
-
-  .pyramid-two {
-    position: absolute;
-    left: 1%;
-    top: 421px;
-    -webkit-animation: pyramidSlideTwo 1.5s; /* Safari 4.0 - 8.0 */
-    animation: pyramidSlideTwo 1.5s;
-  }
-
-  /* Safari 4.0 - 8.0 */
-  @-webkit-keyframes pyramidSlideTwo {
-    from {left: -500px;}
-    to {left: 1%;}
-  }
-
-  /* Standard syntax */
-  @keyframes pyramidSlideTwo {
-    from {left: -500px;}
-    to {left: 1%;}
-  }
-
-  .dome {
-    position: absolute;
-    left: 13%;
-    top: 438px;
-    -webkit-animation: domeFade 8s; /* Safari 4.0 - 8.0 */
-    animation: domeFade 8s;
-  }
-
-  /* Safari 4.0 - 8.0 */
-  @-webkit-keyframes domeFade {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
-
-  /* Standard syntax */
-  @keyframes domeFade {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
-
-  .pyramid-three {
-    position: absolute;
-    left: 24%;
-    top: 420px;
-    -webkit-animation: pyramidSlideThree 2s; /* Safari 4.0 - 8.0 */
-    animation: pyramidSlideThree 2s;
-  }
-
-  /* Safari 4.0 - 8.0 */
-  @-webkit-keyframes pyramidSlideThree {
-    from {left: -500px;}
-    to {left: 24%;}
-  }
-
-  /* Standard syntax */
-  @keyframes pyramidSlideThree {
-  from {left: -500px;}
-  to {left: 24%;}
-  }
-
-  .pyramid-four {
-    position: absolute;
-    left: 38%;
-    top: 456px;
-    -webkit-animation: pyramidSlideFour 2s; /* Safari 4.0 - 8.0 */
-    animation: pyramidSlideFour 2s;
-  }
-
-  /* Safari 4.0 - 8.0 */
-  @-webkit-keyframes pyramidSlideFour {
-    from {left: -500px;}
-    to {left: 38%;}
-  }
-
-  /* Standard syntax */
-  @keyframes pyramidSlideFour {
-  from {left: -500px;}
-  to {left: 38%;}
-  }
-
-  .pyramid-five {
-    position: absolute;
-    left: 48%;
-    top: 442px;
-    -webkit-animation: pyramidSlideFive 2s; /* Safari 4.0 - 8.0 */
-    animation: pyramidSlideFive 2s;
-  }
-
-  /* Safari 4.0 - 8.0 */
-  @-webkit-keyframes pyramidSlideFive {
-    from {left: 1700px;}
-    to {left: 48%;}
-  }
-
-  /* Standard syntax */
-  @keyframes pyramidSlideFive {
-  from {left: 1700px;}
-  to {left: 48%;}
-  }
-
-  .pyramid-six {
-    position: absolute;
-    left: 67%;
-    top: 402px;
-    -webkit-animation: pyramidSlideSix 1.5s; /* Safari 4.0 - 8.0 */
-    animation: pyramidSlideSix 1.5s;
-  }
-
-  /* Safari 4.0 - 8.0 */
-  @-webkit-keyframes pyramidSlideSix {
-    from {left: 1700px;}
-    to {left: 67%;}
-  }
-
-  /* Standard syntax */
-  @keyframes pyramidSlideSix {
-  from {left: 1700px;}
-  to {left: 67%;}
-  }
-
-  .pyramid-seven {
-    position: absolute;
-    left: 73%;
-    top: 342px;
-    -webkit-animation: pyramidSlideSevenMd 1s; /* Safari 4.0 - 8.0 */
-    animation: pyramidSlideSevenMd 1s;
-  }
-
-  /* Safari 4.0 - 8.0 */
-  @-webkit-keyframes pyramidSlideSevenMd {
-    from {left: 1700px;}
-    to {left: 73%;}
-  }
-
-  /* Standard syntax */
-  @keyframes pyramidSlideSevenMd {
-  from {left: 1700px;}
-  to {left: 73%;}
-  }
-
-  .pyramid-eight {
-    position: absolute;
-    right: 0%;
-    top: 405px;
-    -webkit-animation: pyramidSlideEight 1.5s; /* Safari 4.0 - 8.0 */
-    animation: pyramidSlideEight 1.5s;
-  }
-
-  /* Safari 4.0 - 8.0 */
-  @-webkit-keyframes pyramidSlideEight {
-    from {right: -500px;}
-    to {right: 0%;}
-  }
-
-  /* Standard syntax */
-  @keyframes pyramidSlideEight {
-  from {right: -500px;}
-  to {right: 0%;}
-  }
-
-  // Hide larger pyramids
-  .pyramid-xs-hide {
-    visibility: hidden;
-  }
-
 }
 
 // Large devices (desktops, 992px and up)
@@ -511,10 +165,6 @@
     top: 52px;
     -webkit-animation: sunFade 8s; /* Safari 4.0 - 8.0 */
     animation: sunFade 8s;
-  }
-
-  .pyramid-lg-hide {
-    visibility: visible;
   }
 
 }
@@ -590,95 +240,10 @@
   #home-banner-name {
   }
 
-  .pyramid-wide-hide {
-    visibility: visible;
-  }
-
-  .pyramid-wide-one {
-    position: absolute;
-    left: 5%;
-    top: 421px;
-    -webkit-animation: pyramidSlideWideOne 1.5s; /* Safari 4.0 - 8.0 */
-    animation: pyramidSlideWideOne 1.5s;
-  }
-
-  /* Safari 4.0 - 8.0 */
-  @-webkit-keyframes pyramidSlideWideOne {
-    from {left: -500px;}
-    to {left: 5%;}
-  }
-
-  /* Standard syntax */
-  @keyframes pyramidSlideWideOne {
-    from {left: -500px;}
-    to {left: 5%;}
-  }
-
-  .pyramid-wide-two {
-    position: absolute;
-    left: 30%;
-    top: 416px;
-    -webkit-animation: pyramidSlideWideTwo 1.5s; /* Safari 4.0 - 8.0 */
-    animation: pyramidSlideWideTwo 1.5s;
-  }
-
-  /* Safari 4.0 - 8.0 */
-  @-webkit-keyframes pyramidSlideWideTwo {
-    from {left: -500px;}
-    to {left: 30%;}
-  }
-
-  /* Standard syntax */
-  @keyframes pyramidSlideWideTwo {
-    from {left: -500px;}
-    to {left: 30%;}
-  }
-
-  .pyramid-wide-three {
-    position: absolute;
-    left: 45%;
-    top: 342px;
-    -webkit-animation: pyramidSlideWideThree 1.5s; /* Safari 4.0 - 8.0 */
-    animation: pyramidSlideWideThree 1.5s;
-  }
-
-  /* Safari 4.0 - 8.0 */
-  @-webkit-keyframes pyramidSlideWideThree {
-    from {left: -500px;}
-    to {left: 45%;}
-  }
-
-  /* Standard syntax */
-  @keyframes pyramidSlideWideThree {
-  from {left: -500px;}
-  to {left: 45%;}
-  }
-
-  .pyramid-wide-four {
-    position: absolute;
-    left: 68%;
-    top: 445px;
-    -webkit-animation: pyramidSlideWideFour 2s; /* Safari 4.0 - 8.0 */
-    animation: pyramidSlideWideFour 2s;
-  }
-
-  /* Safari 4.0 - 8.0 */
-  @-webkit-keyframes pyramidSlideWideFour {
-    from {left: 1700px;}
-    to {left: 68%;}
-  }
-
-  /* Standard syntax */
-  @keyframes pyramidSlideWideFour {
-  from {left: 1700px;}
-  to {left: 68%;}
-  }
-
 }
 
 // Extra-Extra large devices (large desktops, 1900px and up)
 @media (min-width: 1900px) {
   #home-banner-name {
-
   }
 }

@@ -8,6 +8,7 @@
 
 // Bootstrap variables
 $font-family-sans-serif: 'Hind Vadodara', sans-serif;
+$headings-font-family:   'Raleway', sans-serif;
 $navbar-dark-color: #f9f9f9;
 $body-bg: #f9f9f9;
 
@@ -22,9 +23,10 @@ $body-bg: #f9f9f9;
 // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
 .bg-dark {
-  background: #1a2a6c;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #333333, #95a5a6, #7f8c8d);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #333333, #95a5a6, #7f8c8d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #614385;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #516395, #614385);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #516395, #614385); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 ul.navbar-nav {
