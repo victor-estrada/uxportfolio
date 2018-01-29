@@ -137,6 +137,17 @@
   background: linear-gradient(to bottom, #eef2f3, #ecf0f1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+#projects-update .btn {
+  margin-top: 50px;
+  background: #f9f9f9;
+	box-shadow: 0 2px 4px 0 rgba(52, 73, 94,.5);
+  font-family: Lato-Light;
+  font-size: 18px;
+  font-weight: 300;
+  border-color: #36D1DC;
+  color: #36D1DC;
+}
+
 #projects-title {
   margin-top: 150px;
   font-family: Lato-Light;
