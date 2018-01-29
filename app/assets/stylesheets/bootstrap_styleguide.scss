@@ -251,7 +251,71 @@ h4 {
 			padding: 0;
 		}
 	}
+}
 
+#contactModal {
+  .modal-header {
+    background: #36D1DC;
+    border: none;
+
+    button {
+      color: #5B86E5;
+      opacity: .7;
+    }
+  }
+
+  .modal-title {
+    font-family: Lato-Light;
+    font-weight: 400;
+    color: #f9f9f9;
+  }
+
+  h5 {
+    font-size: 22px;
+  }
+
+  .modal-footer {
+    padding: 50px 15px 15px 15px;
+    background: #36D1DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+  }
+
+  .btn {
+		margin: 5px 0 5px 0;
+		border: 1px solid #ECF0F1;
+
+		box-shadow: 1px 2px 2px 0 #5B86E5;
+		font-size: 18px;
+
+		letter-spacing: 0;
+		line-height: 35px;
+	}
+
+  .btn-danger {
+    margin: 0 0 30px 0;
+    background: #5B86E5;
+    border: 0 solid #5B86E5;
+    box-shadow: 1px 2px 4px 0 #4A4A4A;
+    font-family: Lato-Light;
+    font-weight: normal;
+    font-size: 20px;
+    color: #36D1DC;
+  }
+
+  .btn-default {
+    background: #5B86E5;
+    border-radius: 25px;
+    width: 100px;
+    font-family: Lato-Light;
+    font-weight: normal;
+    color: #ecf0f1;
+  }
+
+  #contact-url {
+    color: #f9f9f9;
+  }
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -312,6 +376,10 @@ h4 {
 			margin: 0 0 0 0;
 		}
 	}
+
+  #contactModal .modal-dialog {
+    width: 760px;
+  }
 
 }
 

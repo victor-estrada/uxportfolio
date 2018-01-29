@@ -24,8 +24,55 @@
       <li class="<%= active_class(about_path) %>"><%= link_to "About", about_path, class: "nav_link" %></li>
       <li class="<%= active_class(projects_path) %>"><%= link_to "Projects", projects_path, class: "nav_link" %></li>
       <li><%= link_to "Resume", 'resume.pdf', class: "nav_link" %></li>
-      <li class="<%= active_class(contact_path) %>"><%= link_to "Contact", contact_path, class: "nav_link" %></li>
+      <li><a href="#contactModal" class="nav_link" data-toggle="modal" data-target="#contactModal">Contact</a></li>
     </ul>
   </div><!-- /.navbar-collapse -->
   </div>
 </nav>
+
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="projectLabel">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h5 class="modal-title" id="contactModalLabel">Let's Get in Touch.</h5>
+    </div>
+    <div class="modal-footer">
+  	    <div class="col-xs-12 col-sm-6 col-sm-offset-0 col-md-6 col-md-offset-0">
+  	      <a href="https://www.linkedin.com/in/victor-estrada-7927a2125" type="button" class="btn btn-danger btn-block btn-lg">
+  	        <span>
+  	          <i class="fa fa-linkedin" aria-hidden="true"></i>
+  	        </span><br>
+  	        <span id="contact-url">in/victor-estrada</span>
+  	      </a>
+  	    </div>
+  	    <div class="col-xs-12 col-sm-6 col-sm-offset-0 col-md-6 col-md-offset-0">
+  	      <a href="https://twitter.com/victoreUNT" type="button" class="btn btn-danger btn-block btn-lg">
+  	        <span>
+  	          <i class="fa fa-twitter" aria-hidden="true"></i>
+  	        </span><br>
+  	        <span id="contact-url">@victoreUNT</span>
+  	      </a>
+  	    </div>
+  	    <div class="col-xs-12 col-sm-6 col-sm-offset-0 col-md-6 col-md-offset-0">
+  	      <a href="mailto:victorestrada.ux@gmail.com" type="button" class="btn btn-danger btn-block btn-lg">
+  	        <span>
+  	          <i class="fa fa-envelope" aria-hidden="true"></i>
+  	        </span><br>
+  	        <span id="contact-url">victorestrada.ux@gmail.com</span>
+  	      </a>
+  	    </div>
+  	    <div class="col-xs-12 col-sm-6 col-sm-offset-0 col-md-6 col-md-offset-0">
+  	      <a href="tel:14157159039" type="button" class="btn btn-danger btn-block btn-lg">
+  	        <span>
+  	          <i class="fa fa-phone" aria-hidden="true"></i>
+  	        </span><br>
+  	        <span id="contact-url">415-715-9039</span>
+  	      </a>
+  	    </div>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
