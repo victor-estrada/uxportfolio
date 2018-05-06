@@ -38,7 +38,7 @@ gem 'font-awesome-sass', '~> 4.7.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-group :development, :test do
+group :test do
   gem 'pg'
 end
 
