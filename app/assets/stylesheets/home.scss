@@ -53,6 +53,7 @@
 #banner-subheading {
   padding-bottom: 6px;
   font-family: Lato-Light;
+  font-weight: 300;
   font-size: 50px;
   color: #EDF0F1;
   letter-spacing: 0.1px;
@@ -63,6 +64,7 @@
 #banner-tagline {
   padding-bottom: 24px;
   font-family: Lato-Light;
+  font-weight: 300;
   font-size: 18px;
   color: #EDF0F1;
   letter-spacing: -0.5px;
@@ -152,6 +154,7 @@
 #projects-title {
   margin-top: 150px;
   font-family: Lato-Light;
+  font-weight: 300;
   font-size: 50px;
   line-height: 68px;
   color: #36D1DC;
@@ -207,9 +210,9 @@
 .project-thumbnail-description {
   margin-top: 10px;
   padding: 0 10px 0 10px;
-  font-size: 22px;
+  font-size: 16px;
   font-family: Lato-Regular;
-  line-height: 20px;
+  line-height: 18px;
   color: #5B86E5;
 }
 
@@ -230,6 +233,7 @@
 
   #project-modal-styles h3 {
       font-family: Lato-Light;
+      font-weight: 300;
       font-size: 42px;
       font-weight: 500;
       color: #5B86E5;
@@ -237,7 +241,7 @@
 
   #project-modal-styles h5 {
       font-family: Lato-Light;
-      font-weight: 500;
+      font-weight: 300;
       line-height: 90%;
       color: #5B86E5;
     }
