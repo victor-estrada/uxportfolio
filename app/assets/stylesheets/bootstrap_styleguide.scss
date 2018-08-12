@@ -1,58 +1,18 @@
-@import url(https://fonts.googleapis.com/css?family=Bitter:400,400i,700);
+@import url(https://fonts.googleapis.com/css?family=Bitter:400);
 @import url(https://fonts.googleapis.com/css?family=Alfa+Slab+One);
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
 $font-family-sans-serif: 'Lato', sans-serif;
-$headings-font-family: 'Bitter', serif;
-$headings-font-weight: 700;
-$font-family-serif: 'Alfa Slab One', cursive;
+$headings-font-family: 'Lato', sans-serif;
+$headings-font-weight: 400;
 $font-size-base: 18px;
 $line-height-base: 1.8;
-$body-bg: #f9f9f9;
-$text-color: #262626;
-$link-color: #e67e22;
-$navbar-height: 60px;
-$navbar-default-bg: #f9f9f9;
-$navbar-default-link-color: #36D1DC;
-$navbar-default-link-active-bg: #f9f9f9;
-$navbar-default-link-active-color: #5B86E5;
-$navbar-default-link-hover-color: #5B86E5;
-$navbar-default-border: #f9f9f9;
-$navbar-default-toggle-border-color: #f9f9f9;
-$navbar-default-toggle-hover-bg: none;
+$text-color: #f9f9f9;
+$link-color: #ffbe76;
 $brand-primary: #f9f9f9;
-$jumbotron-heading-font-size: 300%;
-$jumbotron-padding: 2%;
-$component-active-color: #f9f9f9;
 $page-header-border-color: none;
-$input-bg: #f9f9f9;
-$btn-font-weight: bold;
-$btn-primary-color: #1abc9c;
-$btn-primary-bg: #f9f9f9;
-$btn-primary-border: #1abc9c;
-$btn-default-color: #34495e;
-$btn-default-bg: #f9f9f9;
-$btn-default-border: #34495e;
-$btn-info-color: #2c3e50;
-$btn-info-bg: #ecf0f1;
-$btn-info-border: #2c3e50;
-$btn-warning-color: #f9f9f9;
-$btn-warning-bg: rgba(255,255,255,.1);
-$btn-warning-border: #EDF0F1;
-$btn-border-radius-large: 0;
-$btn-border-radius-base: 0;
-$input-border: #bdc3c7;
-$input-border-radius-large: 0;
-$panel-default-border: #f9f9f9;
-$panel-bg: #f9f9f9;
-$panel-inner-border: #f9f9f9;
-$thumbnail-padding: 3%;
-$thumbnail-bg: transparent;
-$thumbnail-border-radius: 0;
-$thumbnail-border: #34495e;
-$well-bg: #f9f9f9;
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
@@ -61,406 +21,54 @@ $well-bg: #f9f9f9;
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
-.navbar {
-	position: relative;
-  margin-bottom: 0;
-}
-.navbar-brand {
-	display: block;
-	position: absolute;
-	left: 50%;
-	width: auto;
-	height: 66px;
-	margin-left: -62.5px !important;  /* 44px 50% of your logo width */
-	margin-top: -6px;
-}
-.navbar-brand:hover {
-	opacity: .6;
-}
-.navbar-toggle {
-  display: block;
-  height: auto;
-  width: auto;
-  margin: 6px 0 0 2%;
-  float: left;
-}
-.navbar-default {
-	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
-  margin-bottom: 0;
-}
-.navbar-default .navbar-toggle .icon-bar {
-	background-color: #3498DB;
-	height: 5px;
-	margin-bottom: 5px;
-}
-.navbar-toggle:hover {
-	opacity: .6;
-}
-.navbar-text {
-	float:right;
-	margin-right: 5%;
-	margin-top: 20px;
-}
-#resume-link {
-	font-family: 'Bitter', serif;
-  font-size: 14px;
-  font-weight: bold;
-	color: #3498DB;
-}
-#resume-link:hover {
-	text-decoration:none;
-	opacity: .6;
+body {
+	background: #232526;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	height: 100%;
 }
 
-.navbar-right {
-	margin-top: 0px;
-	margin-left: 0px;
-	padding-right: 0px;
-	padding-top: 2%;
-}
-.navbar-collapse {
-  width: 100%;
-  margin-top: 2%;
-  text-align: center;
-}
-.nav_link {
-  font-family: Lato-Bold;
-  font-size: 16px;
-	color: #e67e22;
+#introduction {
+	padding: 10%;
 }
 
-h1 {
-	font-size: 38px;
-}
-h1 small {
-	color: #f9f9f9;
-	font-size: 32px;
-	font-weight: bold;
-}
-h2{
- color: #e67e22;
- font-size: 26px;
-}
-h3 {
- font-size: 20px;
- color: #1abc9c;
- font-family: 'Lato', sans-serif;
-}
-h4 {
- color: #1abc9c;
- font-family: 'Lato', sans-serif;
-}
-
-#footer_layout{
-	position: relative;
-	bottom: 0;
-	height: 350px;
-	width: 100%;
-  padding-top: 50px;
-	background: #ecf0f1;
-
-  .footer-link {
-   color: #95a5a6;
-  }
-}
-
-#footer-note {
-  background: #95a5a6;
-
-  h6 {
-    font-size: 12px;
-    color: #ecf0f1;
-    font-style: normal;
-  }
-}
-
-#footer-update {
-
-	background: #36D1DC;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
-	#footer-title {
-		margin: 50px 0 50px 15px;
-		padding-left: 20px;
-		font-family: Lato-Light;
-		font-size: 36px;
-		color: #ECF0F1;
-		letter-spacing: -1px;
-	}
-
-	.btn {
-		margin: 5px 0 5px 0;
-		border: 1px solid #ECF0F1;
-
-		box-shadow: 1px 2px 2px 0 #5B86E5;
-		font-size: 18px;
-
-		letter-spacing: 0;
-		line-height: 35px;
-	}
-
-	.btn-success {
-		margin-bottom: 20px;
-		width: 100%;
-		border: 0 solid #36D1DC;
-		background-color: #36D1DC;
-		color: #ECF0F1;
-	}
-
-	#resume-footer-button {
-		margin-top: 25px;
-		margin-bottom: 75px;
-		border: 0 solid #ECF0F1;
-		border-radius: 30px;
-		background-color: #ECF0F1;
-		color: #36D1DC;
-	}
-
-	.btn-danger {
-		margin: 0 0 30px 0;
-		background: #5B86E5;
-		border: 0 solid #5B86E5;
-		box-shadow: 1px 2px 4px 0 #4A4A4A;
-		font-family: Lato-Light;
-		font-weight: normal;
-		font-size: 20px;
-		color: #36D1DC;
-	}
-
-	.fa {
-		margin-top: 5px;
-		font-size: 28px;
-	}
-
-	#footer-url {
-		font-size: 14px;
-		color: #ECF0F1;
-	}
-
-	#footer-signoff {
-		width: 100%;
-		background: #36D1DC;
-		margin: 50px 0 0 0;
-		padding: 5px 0 5px 0;
-		font-size: 11px;
-		color: #5B86E5;
-
-		.col-xs-12 {
-			padding: 0;
-		}
-	}
-}
-
-#contactModal {
-  .modal-header {
-    background: #36D1DC;
-    border: none;
-
-    button {
-      color: #5B86E5;
-      opacity: .7;
-    }
-  }
-
-  .modal-title {
-    font-family: Lato-Light;
-    font-weight: 400;
-    color: #f9f9f9;
-  }
-
-  h5 {
-    font-size: 22px;
-  }
-
-  .modal-footer {
-    padding: 50px 15px 15px 15px;
-    background: #36D1DC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    border: none;
-  }
-
-  .btn {
-		margin: 5px 0 5px 0;
-		border: 1px solid #ECF0F1;
-
-		box-shadow: 1px 2px 2px 0 #5B86E5;
-		font-size: 18px;
-
-		letter-spacing: 0;
-		line-height: 35px;
-	}
-
-  .btn-danger {
-    margin: 0 0 30px 0;
-    background: #5B86E5;
-    border: 0 solid #5B86E5;
-    box-shadow: 1px 2px 4px 0 #4A4A4A;
-    font-family: Lato-Light;
-    font-weight: normal;
-    font-size: 20px;
-    color: #36D1DC;
-  }
-
-  .btn-default {
-    background: #5B86E5;
-    border-radius: 25px;
-    width: 100px;
-    font-family: Lato-Light;
-    font-weight: normal;
-    color: #ecf0f1;
-  }
-
-  #contact-url {
-    color: #f9f9f9;
-  }
-}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) {
-	.navbar-toggle {
-		display: none;
-		}
 
-	.navbar-collapse {
-		margin-top: 0;
+	#introduction {
+		width: 700px;
 	}
 
-	.navbar-text {
-		display:none;
-		}
-
-  .navbar-brand {
-	 left: 10%;
-	 bottom: 0;
-   margin: 0 auto;
-	 width: auto;
-	 height: 66px;
-  }
- .navbar-right {
-  padding: 0;
-  margin: 0 1% 0 0;
-}
-  .nav_link {
-  font-size: 16px;
-  width: 100%;
-  }
-
-  #home_option {
-  display: none;
-  }
-
-	#footer-update {
-
-		#footer-title {
-			margin: 50px 0 50px 15px;
-			padding-left: 0;
-			font-size: 32px;
-		}
-
-		.btn-success {
-			font-size: 16px;
-		}
-
-		#resume-footer-button {
-			margin-top: 8px;
-		}
-
-		#footer-url {
-			font-size: 12px;
-		}
-
-		#footer-signoff {
-			margin: 0 0 0 0;
-		}
-	}
-
-  #contactModal .modal-dialog {
-    width: 760px;
-  }
 
 }
-
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) {
-  .navbar-brand {
 
-
-  }
-  .nav_link {
-	 margin-bottom: 0;
-   width: 90px;
-  }
-
-  p {
-    font-size: 18px;
-  }
-	h2 {
-		font-size: 36px;
-	}
-	h3 {
-		font-size: 28px;
-	}
-
-
-	#footer-update {
-
-		#footer-title {
-			margin: 50px 0 50px 15px;
-			padding-left: 0;
-			font-size: 36px;
-		}
-
-		.btn-success {
-			font-size: 18px;
-		}
-
-		#resume-footer-button {
-			margin-top: 5px;
-		}
-
-		#footer-url {
-			font-size: 14px;
-		}
+	#introduction {
+		width: 800px;
 	}
 
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: $screen-lg-min) {
-  .navbar-brand {
 
-  }
-  .navbar-toggle {
-  display: none;
-  }
-  .navbar-right {
-  margin-right: 3%;
-  }
-  .nav_link {
-  width: 100px;
-  }
+	#introduction {
+		padding: 120px;
+	}
 
-	h2 {
-		font-size: 36px;
-	}
-	h3 {
-		font-size: 28px;
-	}
+
 }
 
 /* Extra Large devices (large desktops, 1440 and up) */
 @media (min-width: 1440px) {
 
-	.navbar-right {
-  margin-right: 4%;
-  }
-
-  .nav_link {
-  width: 110px;
-  }
+	#introduction {
+		padding: 5%;
+	}
 
 }
